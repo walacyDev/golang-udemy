@@ -12,6 +12,7 @@ func main() {
 	numeros[3] = 05
 
 	fmt.Println(numeros)
+	fmt.Println("Array de numeros na posição 3:", numeros[3])
 
 	var valores = [3]int{3, 10, 90}
 
@@ -19,5 +20,5 @@ func main() {
 
 	permissoes := [3]string{"usuário", "admin", "editor"}
 
-	fmt.Println(permissoes[0])
+	fmt.Println(permissoes)
 }
