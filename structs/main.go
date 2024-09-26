@@ -40,6 +40,7 @@ func main() {
 
 	usuarios[len(usuarios)+1] = Usuario{Nome: "Maria", Idade: 22, status: false, permissao: "admin"}
 
+	//Manipulando valor do map
 	usuarios[1] = Usuario{Nome: "Sujeito Programador", Idade: 28, status: true, permissao: "admin"}
 
 	fmt.Println(usuarios)
