@@ -15,11 +15,14 @@ func numeros() {
 func letras() {
 	for l := 'a'; l < 'j'; l++ {
 		fmt.Printf("%c ", l)
-		time.Sleep(time.Microsecond * 300)
+		time.Sleep(time.Millisecond * 300)
 	}
 }
 
 func main() {
-	numeros()
-	letras()
+	go numeros()
+	go letras()
+
+	time.Sleep(5 * time.Second)
+	fmt.Print("FINALIZANDO PROGRAMA")
 }
